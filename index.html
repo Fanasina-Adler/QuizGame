@@ -8,14 +8,20 @@
     <title>Quiz</title>
 </head>
 
-<body>
+<body class="">
     <div class="container">
         <div id="quiz">
+            <div class="mode">
+                <div id="modebtn">&#9728;</div>
+            </div>
             <h2 id="quizQuestion"></h2>
             <div id="quizOptions"></div>
             <button id="nextbtn" class="btn">Suivant <div id="after"></div></button>
         </div>
         <div id="resultat" style="display: none;">
+            <div class="mode">
+                <div id="resmodebtn">&#9728;</div>
+            </div>
             <h2>Résultat</h2>
             <p id="mention"></p>
             <p>Score : <span id="score"></span></p>
