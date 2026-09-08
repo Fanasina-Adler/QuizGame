@@ -4,13 +4,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+.dark {
+    --blanc: #112;
+    --noire: white;
+    --ombre: #050505;
+}
+
 body {
+    --blanc: white;
+    --noire: #112;
+    --ombre: #cccccc;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: var(--blanc);
+    transition: ease-in-out 0.3s;
 }
 
 .container {
@@ -27,10 +38,12 @@ body {
     align-items: center;
     width: 100%;
     gap: 10px;
-    background: white;
+    background: var(--blanc);
+    color: var(--noire);
     padding: 10px 0;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px #cccccc;
+    box-shadow: 2px 2px 10px var(--ombre);
+    position: relative;
 }
 
 #resultat {
@@ -63,7 +76,7 @@ body {
 
 #nextbtn,
 #restart {
-    color: white;
+    color: var(--blanc);
     background: rgb(0, 102, 255);
     width: 90%;
     position: relative;
@@ -79,12 +92,12 @@ body {
     font-weight: 700;
 }
 
-#nextbtn::before{
+#nextbtn::before {
     content: "";
     height: 20px;
     width: 20px;
-    border: 5px solid white;
-    background: white;
+    border: 5px solid var(--blanc);
+    background: var(--blanc);
     position: absolute;
     transform: rotate(45deg);
     /* right: 30px; */
@@ -93,11 +106,11 @@ body {
 }
 
 #nextbtn::after {
-     content: "";
+    content: "";
     height: 25px;
     width: 5px;
-    border: 5px solid white;
-    background: white;
+    border: 5px solid var(--blanc);
+    background: var(--blanc);
     position: absolute;
     transform: rotate(-45deg);
     right: 0px;
@@ -108,25 +121,25 @@ body {
     font-size: 2rem;
 }
 
-#after::after{
+#after::after {
     content: "";
     height: 25px;
     width: 5px;
-    border: 5px solid white;
-    background: white;
+    border: 5px solid var(--blanc);
+    background: var(--blanc);
     position: absolute;
     transform: rotate(45deg);
-    right:-0px;
+    right: -0px;
     top: 15px;
 }
 
-button:disabled{
+button:disabled {
     color: black;
     cursor: not-allowed;
     background: #cccccc;
 }
 
-button{
+button {
     background: #cccccc;
     transition: ease-in-out 0.3s;
 }
@@ -135,7 +148,26 @@ button:disabled:hover {
     transform: none;
 }
 
-#copy{
+#copy {
     position: absolute;
     bottom: 0;
+    color: var(--noire);
+}
+
+.mode {
+    display: flex;
+    width: 90%;
+    justify-content: end;
+}
+
+#modebtn,
+#resmodebtn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
 }
