@@ -459,6 +459,8 @@ const restart = document.getElementById('restart');
 const quiz = document.getElementById("quiz");
 const resultat = document.getElementById("resultat");
 const mention = document.getElementById("mention");
+const modebtn = document.getElementById("modebtn");
+const resmodebtn = document.getElementById("resmodebtn")
 
 let questionAleatoire = [...toutLesQuestion].sort(
     () => Math.random() - 0.5,
@@ -485,39 +487,37 @@ function changeQuestion() {
         quiz.style.display = "none";
         resultat.style.display = "flex";
         score.textContent = `${s}/20`;
-        if(s<=7){
-            mention.textContent="Insuffisant"
-            mention.style.color="#dc2626"
+        if (s <= 7) {
+            mention.textContent = "Insuffisant"
+            mention.style.color = "#dc2626"
         }
-        else if(s<=9){
-            mention.textContent="Fragile"
-            mention.style.color="#f97316"
+        else if (s <= 9) {
+            mention.textContent = "Fragile"
+            mention.style.color = "#f97316"
         }
-        else if(s<=11){
-            mention.textContent="Passable"
-            mention.style.color ="#f59e0b"
+        else if (s <= 11) {
+            mention.textContent = "Passable"
+            mention.style.color = "#f59e0b"
         }
-        else if(s<=13){
-            mention.textContent="Assez bien"
-            mention.style.color="#eab308"
+        else if (s <= 13) {
+            mention.textContent = "Assez bien"
+            mention.style.color = "#eab308"
         }
-        else if(s<=15){
-            mention.textContent="Bien"
-            mention.style.color="#84cc16"
+        else if (s <= 15) {
+            mention.textContent = "Bien"
+            mention.style.color = "#84cc16"
         }
-        else if(s<=17){
-            mention.textContent="Très bien"
-            mention.style.color="#22c55e"
+        else if (s <= 17) {
+            mention.textContent = "Très bien"
+            mention.style.color = "#22c55e"
         }
         else {
-            mention.textContent="Excellent"
-            mention.style.color="#16a34a"
+            mention.textContent = "Excellent"
+            mention.style.color = "#16a34a"
         }
     }
 }
 
-// atao samihafa ve ny lokon'ny mention
-// ok
 function verifierReponse(choix, bonneReponse) {
     btns = quizOptions.querySelectorAll(".btn");
     btns.forEach((b) => {
@@ -540,4 +540,23 @@ nextbtn.onclick = () => {
     questionRepondu++;
     changeQuestion()
 }
+let lune = "&#9790;"
+let soleil = "&#9728;"
+modebtn.addEventListener('click', () => {
+    document.body.classList.toggle("dark")
+    let x = lune;
+    lune = soleil;
+    soleil = x;
+    modebtn.innerHTML = soleil
+})
+
+resmodebtn.addEventListener('click', () => {
+    document.body.classList.toggle("dark")
+    let x = lune;
+    lune = soleil;
+    soleil = x;
+    resmodebtn.innerHTML = soleil
+})
+
+
 changeQuestion();
