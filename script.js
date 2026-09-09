@@ -461,6 +461,8 @@ const resultat = document.getElementById("resultat");
 const mention = document.getElementById("mention");
 const modebtn = document.getElementById("modebtn");
 const resmodebtn = document.getElementById("resmodebtn")
+const succesSon = new Audio("sound/success.mp3");
+const failedSon = new Audio("sound/failed.mp3");
 
 let questionAleatoire = [...toutLesQuestion].sort(
     () => Math.random() - 0.5,
@@ -524,15 +526,19 @@ function verifierReponse(choix, bonneReponse) {
         b.disabled = true;
         if (b.textContent === bonneReponse) {
             b.style.background = "#16a34a";
-            b.style.color = "white"
+            b.style.color = "white";
         }
         else if (b.textContent === choix) {
             b.style.background = "#dc2626";
-            b.style.color = "white"
+            b.style.color = "white";
+            failedSon.currentTime = 0;
+            failedSon.play();
         }
     });
     if (choix === bonneReponse) {
         s++;
+        succesSon.currentTime = 0;
+        succesSon.play()
     }
 }
 
