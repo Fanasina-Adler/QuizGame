@@ -157,7 +157,8 @@ button:disabled:hover {
 .mode {
     display: flex;
     width: 90%;
-    justify-content: end;
+    justify-content: space-between;
+  align-items: center;
 }
 
 #modebtn,
@@ -171,4 +172,9 @@ button:disabled:hover {
     align-items: center;
     justify-content: center;
     transform: rotate(-35deg);
+}
+
+#timer{
+  font-size: 20px;
+  font-weight: 700;
 }
