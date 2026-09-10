@@ -10,10 +10,27 @@
 
 <body class="">
     <div class="container">
-        <div id="quiz">
+        <div id="accueil">
             <div class="mode">
                 <div id="timer">
-                  <span id="sec">15</span>
+                </div>
+                <div id="modebtn">&#9728;</div>
+            </div>
+            <h1><span id="titre">Quiz</span><span id="game">Game</span></h1>
+            <h2>Bienvenue dans le quiz !</h2>
+            <p>Choisissez le catégorie :</p>
+            <select name="categorie" id="categorie">
+                <option value="General">Général</option>
+                <option value="Technologie">Technologie</option>
+                <option value="Histoire">Histoire</option>
+                <option value="Science">Science</option>
+            </select>
+            <button id="startbtn" class="btn" onclick="startQuiz()">Commencer</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <div class="mode">
+                <div id="timer">
+                    <span id="sec">15</span>
                 </div>
                 <div id="modebtn">&#9728;</div>
             </div>
