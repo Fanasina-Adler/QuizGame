@@ -597,8 +597,8 @@ resmodebtn.addEventListener("click", () => {
 function startTime() {
     clearInterval(intervalTime);
 
-    restTime = 20;
-    sec.textContent = 20;
+    restTime = 15;
+    sec.textContent = 15;
 
     intervalTime = setInterval(() => {
         restTime--;
