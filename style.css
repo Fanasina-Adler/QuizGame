@@ -32,7 +32,8 @@ body {
 }
 
 #quiz,
-#resultat {
+#resultat,
+#accueil {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +76,8 @@ body {
 }
 
 #nextbtn,
-#restart {
+#restart,
+#startbtn {
     color: var(--blanc);
     background: rgb(0, 102, 255);
     width: 90%;
@@ -100,7 +102,6 @@ body {
     background: var(--blanc);
     position: absolute;
     transform: rotate(45deg);
-    /* right: 30px; */
     left: -10px;
     top: 5px;
 }
@@ -177,4 +178,34 @@ button:disabled:hover {
 #timer{
   font-size: 20px;
   font-weight: 700;
+}
+
+#accueil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+select{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+#game {
+    background: #112;
+    color: white;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+#titre {
+    background : white;
+    color: #112;
+    border-radius: 10px;
+    padding-left: 10px;
 }
