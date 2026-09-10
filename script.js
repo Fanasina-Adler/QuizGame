@@ -448,121 +448,171 @@ const toutLesQuestion = [
         question: "En quelle année a été créé Facebook ?",
         option: ["2002", "2004", "2006", "2008"],
         reponse: "2004"
-    },
-]
+    }
+];
 
-const quizQuestion = document.getElementById('quizQuestion');
-const quizOptions = document.getElementById('quizOptions');
-const nextbtn = document.getElementById('nextbtn');
-const score = document.getElementById('score');
-const restart = document.getElementById('restart');
+const quizQuestion = document.getElementById("quizQuestion");
+const quizOptions = document.getElementById("quizOptions");
+const nextbtn = document.getElementById("nextbtn");
+const score = document.getElementById("score");
+const restart = document.getElementById("restart");
 const quiz = document.getElementById("quiz");
 const resultat = document.getElementById("resultat");
 const mention = document.getElementById("mention");
 const modebtn = document.getElementById("modebtn");
-const resmodebtn = document.getElementById("resmodebtn")
+const resmodebtn = document.getElementById("resmodebtn");
 const succesSon = new Audio("sound/success.mp3");
 const failedSon = new Audio("sound/failed.mp3");
+const sec = document.getElementById("sec");
 
-let questionAleatoire = [...toutLesQuestion].sort(
-    () => Math.random() - 0.5,
-);
-
+let intervalTime = null;
+let restTime = 30;
 let s = 0;
 let questionRepondu = 0;
 
+const questionAleatoire = [...toutLesQuestion].sort(
+    () => Math.random() - 0.5
+);
+
 function changeQuestion() {
+    clearInterval(intervalTime);
+    intervalTime = null;
+
     quizOptions.textContent = "";
+
     if (questionRepondu < 20) {
-        const questionActuel = questionAleatoire[questionRepondu]
+        const questionActuel = questionAleatoire[questionRepondu];
         const optionActuel = questionActuel.option;
-        quizQuestion.textContent = `${questionRepondu + 1}. ${questionActuel.question}`
+
+        quizQuestion.textContent =
+            `${questionRepondu + 1}. ${questionActuel.question}`;
+
         for (let i = 0; i < optionActuel.length; i++) {
             const btn = document.createElement("button");
-            btn.classList.add("optionbtn", "btn")
+
+            btn.classList.add("optionbtn", "btn");
             btn.textContent = optionActuel[i];
-            quizOptions.appendChild(btn)
-            btn.onclick = () => { verifierReponse(optionActuel[i], questionActuel.reponse) }
+
+            quizOptions.appendChild(btn);
+
+            btn.onclick = () => {
+                verifierReponse(
+                    optionActuel[i],
+                    questionActuel.reponse
+                );
+            };
         }
-    }
-    else {
+
+        startTime();
+    } else {
+        clearInterval(intervalTime);
+        intervalTime = null;
+
         quiz.style.display = "none";
         resultat.style.display = "flex";
+
         score.textContent = `${s}/20`;
+
         if (s <= 7) {
-            mention.textContent = "Insuffisant"
-            mention.style.color = "#dc2626"
-        }
-        else if (s <= 9) {
-            mention.textContent = "Fragile"
-            mention.style.color = "#f97316"
-        }
-        else if (s <= 11) {
-            mention.textContent = "Passable"
-            mention.style.color = "#f59e0b"
-        }
-        else if (s <= 13) {
-            mention.textContent = "Assez bien"
-            mention.style.color = "#eab308"
-        }
-        else if (s <= 15) {
-            mention.textContent = "Bien"
-            mention.style.color = "#84cc16"
-        }
-        else if (s <= 17) {
-            mention.textContent = "Très bien"
-            mention.style.color = "#22c55e"
-        }
-        else {
-            mention.textContent = "Excellent"
-            mention.style.color = "#16a34a"
+            mention.textContent = "Insuffisant";
+            mention.style.color = "#dc2626";
+        } else if (s <= 9) {
+            mention.textContent = "Fragile";
+            mention.style.color = "#f97316";
+        } else if (s <= 11) {
+            mention.textContent = "Passable";
+            mention.style.color = "#f59e0b";
+        } else if (s <= 13) {
+            mention.textContent = "Assez bien";
+            mention.style.color = "#eab308";
+        } else if (s <= 15) {
+            mention.textContent = "Bien";
+            mention.style.color = "#84cc16";
+        } else if (s <= 17) {
+            mention.textContent = "Très bien";
+            mention.style.color = "#22c55e";
+        } else {
+            mention.textContent = "Excellent";
+            mention.style.color = "#16a34a";
         }
     }
 }
 
 function verifierReponse(choix, bonneReponse) {
-    btns = quizOptions.querySelectorAll(".btn");
+    const btns = quizOptions.querySelectorAll(".btn");
+
     btns.forEach((b) => {
         b.disabled = true;
+
         if (b.textContent === bonneReponse) {
             b.style.background = "#16a34a";
             b.style.color = "white";
-        }
-        else if (b.textContent === choix) {
+        } else if (b.textContent === choix) {
             b.style.background = "#dc2626";
             b.style.color = "white";
-            failedSon.currentTime = 0;
-            failedSon.play();
         }
     });
+
     if (choix === bonneReponse) {
         s++;
         succesSon.currentTime = 0;
-        succesSon.play()
+        succesSon.play();
+    } else {
+        failedSon.currentTime = 0;
+        failedSon.play();
     }
 }
 
 nextbtn.onclick = () => {
+    clearInterval(intervalTime);
+    intervalTime = null;
+
     questionRepondu++;
-    changeQuestion()
+    changeQuestion();
+};
+
+let lune = "&#9790;";
+let soleil = "&#9728;";
+
+modebtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    let x = lune;
+    lune = soleil;
+    soleil = x;
+
+    modebtn.innerHTML = soleil;
+});
+
+resmodebtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    let x = lune;
+    lune = soleil;
+    soleil = x;
+
+    resmodebtn.innerHTML = soleil;
+});
+
+function startTime() {
+    clearInterval(intervalTime);
+
+    restTime = 20;
+    sec.textContent = 20;
+
+    intervalTime = setInterval(() => {
+        restTime--;
+
+        sec.textContent = restTime<10?"0"+restTime:restTime;
+
+        if (restTime <= 0) {
+            clearInterval(intervalTime);
+            intervalTime = null;
+
+            questionRepondu++;
+            changeQuestion();
+        }
+    }, 1000);
 }
-let lune = "&#9790;"
-let soleil = "&#9728;"
-modebtn.addEventListener('click', () => {
-    document.body.classList.toggle("dark")
-    let x = lune;
-    lune = soleil;
-    soleil = x;
-    modebtn.innerHTML = soleil
-})
-
-resmodebtn.addEventListener('click', () => {
-    document.body.classList.toggle("dark")
-    let x = lune;
-    lune = soleil;
-    soleil = x;
-    resmodebtn.innerHTML = soleil
-})
-
 
 changeQuestion();
