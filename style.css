@@ -102,6 +102,7 @@ body {
     background: var(--blanc);
     position: absolute;
     transform: rotate(45deg);
+    /* right: 30px; */
     left: -10px;
     top: 5px;
 }
@@ -163,10 +164,13 @@ button:disabled:hover {
 }
 
 #modebtn,
-#resmodebtn {
+#resmodebtn,
+#accmodebtn {
     font-size: 2.5rem;
     cursor: pointer;
-    border-radius : 50%;
+    border: none;
+    background: none;
+    color: var(--noire);
     width: 50px;
     height: 50px;
     display: flex;
