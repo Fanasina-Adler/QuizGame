@@ -1220,6 +1220,7 @@ const sec = document.getElementById("sec");
 const startbtn = document.getElementById("startbtn");
 const accueil = document.getElementById("accueil");
 const categorie = document.getElementById("categorie");
+const accmodebtn = document.getElementById("accmodebtn");
 
 let intervalTime = null;
 let restTime = 30;
@@ -1345,6 +1346,15 @@ resmodebtn.addEventListener("click", () => {
   soleil = x;
 
   resmodebtn.innerHTML = soleil;
+});
+
+accmodebtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  let x = lune;
+  lune = soleil;
+  soleil = x;
+
+  accmodebtn.innerHTML = soleil;
 });
 
 function startTime() {
