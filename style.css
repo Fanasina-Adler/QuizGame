@@ -168,7 +168,6 @@ button:disabled:hover {
 #resmodebtn,
 #accmodebtn {
     font-size: 2.5rem;
-    cursor: pointer;
     border: none;
     background: none;
     color: var(--noire);
