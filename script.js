@@ -1,5 +1,5 @@
 const questions = {
-    General: [
+    Général: [
         {
             question : "Quelle est la capitale de Madagascar ?",
             option : ["Toamasina", "Antananarivo", "Fianarantsoa", "Mahajanga"],
@@ -1221,6 +1221,7 @@ const startbtn = document.getElementById("startbtn");
 const accueil = document.getElementById("accueil");
 const categorie = document.getElementById("categorie");
 const accmodebtn = document.getElementById("accmodebtn");
+const rescategorie = document.getElementById("rescategorie");
 
 let intervalTime = null;
 let restTime = 30;
@@ -1264,7 +1265,7 @@ function changeQuestion() {
 
     quiz.style.display = "none";
     resultat.style.display = "flex";
-
+    rescategorie.textContent ="Catégorie : " + selectedCategory;
     score.textContent = `${s}/20`;
 
     if (s <= 7) {
