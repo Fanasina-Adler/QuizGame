@@ -1202,6 +1202,612 @@ const questions = {
             reponse: "Grand fessier"
         },
     ],
+    Math: [
+        {
+            question: "Quelle est la dérivée de x² ?",
+            option: ["2x", "x", "x²", "2"],
+            reponse: "2x"
+        },
+        {
+            question: "Quelle est la valeur de sin(π/2) ?",
+            option: ["0", "1", "-1", "0.5"],
+            reponse: "1"
+        },
+        {
+            question: "Quelle est l'intégrale de 1/x dx ?",
+            option: ["ln|x| + C", "x²/2 + C", "1/x² + C", "e^x + C"],
+            reponse: "ln|x| + C"
+        },
+        {
+            question: "Que vaut e^(iπ) + 1 ?",
+            option: ["0", "1", "-1", "2"],
+            reponse: "0"
+        },
+        {
+            question: "Quelle est la solution de 2x + 3 = 7 ?",
+            option: ["2", "3", "1", "4"],
+            reponse: "2"
+        },
+        {
+            question: "Quel est le déterminant de [[1,2],[3,4]] ?",
+            option: ["-2", "2", "0", "10"],
+            reponse: "-2"
+        },
+        {
+            question: "Quelle est la limite de (1+1/n)^n quand n→∞ ?",
+            option: ["e", "1", "0", "∞"],
+            reponse: "e"
+        },
+        {
+            question: "Quelle est la somme des angles d'un triangle ?",
+            option: ["180°", "360°", "90°", "270°"],
+            reponse: "180°"
+        },
+        {
+            question: "Que vaut 0! ?",
+            option: ["1", "0", "indefini", "2"],
+            reponse: "1"
+        },
+        {
+            question: "Quelle est la dérivée de sin(x) ?",
+            option: ["cos(x)", "-cos(x)", "-sin(x)", "tan(x)"],
+            reponse: "cos(x)"
+        },
+        {
+            question: "Quelle est l'équation d'un cercle de rayon r centré à l'origine ?",
+            option: ["x²+y²=r²", "x+y=r", "x²-y²=r²", "y=x²+r"],
+            reponse: "x²+y²=r²"
+        },
+        {
+            question: "Que vaut log₁₀(1000) ?",
+            option: ["3", "2", "10", "100"],
+            reponse: "3"
+        },
+        {
+            question: "Quelle est la racine carrée de 144 ?",
+            option: ["12", "14", "16", "11"],
+            reponse: "12"
+        },
+        {
+            question: "Quel est le PGCD de 12 et 18 ?",
+            option: ["6", "3", "12", "36"],
+            reponse: "6"
+        },
+        {
+            question: "Que vaut i² ?",
+            option: ["-1", "1", "0", "i"],
+            reponse: "-1"
+        },
+        {
+            question: "Quelle est la formule de l'aire d'un cercle ?",
+            option: ["πr²", "2πr", "πd", "r²"],
+            reponse: "πr²"
+        },
+        {
+            question: "Quelle est la dérivée de e^x ?",
+            option: ["e^x", "x*e^x", "ln(x)", "0"],
+            reponse: "e^x"
+        },
+        {
+            question: "Que vaut cos(π) ?",
+            option: ["-1", "1", "0", "0.5"],
+            reponse: "-1"
+        },
+        {
+            question: "Combien de faces a un cube ?",
+            option: ["6", "8", "4", "12"],
+            reponse: "6"
+        },
+        {
+            question: "Quelle est la solution de x² = 4 ?",
+            option: ["x=2 ou x=-2", "x=2", "x=4", "x=16"],
+            reponse: "x=2 ou x=-2"
+        },
+        {
+            question: "Que vaut la somme 1+2+...+100 ?",
+            option: ["5050", "5000", "10000", "4950"],
+            reponse: "5050"
+        },
+        {
+            question: "Quelle est la pente de y=3x+2 ?",
+            option: ["3", "2", "5", "0"],
+            reponse: "3"
+        },
+        {
+            question: "Que vaut 2^10 ?",
+            option: ["1024", "1000", "512", "2048"],
+            reponse: "1024"
+        },
+        {
+            question: "Quelle est la formule du binôme (a+b)² ?",
+            option: ["a²+2ab+b²", "a²+b²", "a²-2ab+b²", "ab²"],
+            reponse: "a²+2ab+b²"
+        },
+        {
+            question: "Quel est l'inverse de 0.25 ?",
+            option: ["4", "0.75", "2", "1"],
+            reponse: "4"
+        },
+        {
+            question: "Que vaut la dérivée de ln(x) ?",
+            option: ["1/x", "x", "ln(x)", "e^x"],
+            reponse: "1/x"
+        },
+        {
+            question: "Quelle est la valeur de π approximée ?",
+            option: ["3.14", "2.71", "1.61", "1.41"],
+            reponse: "3.14"
+        },
+        {
+            question: "Combien de diagonales a un carré ?",
+            option: ["2", "4", "1", "0"],
+            reponse: "2"
+        },
+        {
+            question: "Que vaut 5! ?",
+            option: ["120", "60", "24", "720"],
+            reponse: "120"
+        },
+        {
+            question: "Quelle est la médiane de [1,2,3,4,100] ?",
+            option: ["3", "22", "2.5", "100"],
+            reponse: "3"
+        },
+        {
+            question: "Quelle est la probabilité d'avoir pile avec une pièce équilibrée ?",
+            option: ["0.5", "1", "0.25", "0"],
+            reponse: "0.5"
+        },
+        {
+            question: "Que vaut tan(45°) ?",
+            option: ["1", "0", "√2", "∞"],
+            reponse: "1"
+        },
+        {
+            question: "Quelle est la formule de l'aire d'un triangle ?",
+            option: ["(base*hauteur)/2", "base*hauteur", "2*base*hauteur", "base+hauteur"],
+            reponse: "(base*hauteur)/2"
+        },
+        {
+            question: "Que vaut √2 approximativement ?",
+            option: ["1.414", "1.732", "2.236", "1.618"],
+            reponse: "1.414"
+        },
+        {
+            question: "Quelle est la solution de ln(x)=0 ?",
+            option: ["x=1", "x=0", "x=e", "x=10"],
+            reponse: "x=1"
+        },
+        {
+            question: "Combien de zéros a 10^9 ?",
+            option: ["9", "10", "8", "12"],
+            reponse: "9"
+        },
+        {
+            question: "Quelle est la moyenne de 4,6,8 ?",
+            option: ["6", "5", "7", "18"],
+            reponse: "6"
+        },
+        {
+            question: "Que vaut la somme des probabilités d'un univers ?",
+            option: ["1", "0", "0.5", "100"],
+            reponse: "1"
+        },
+        {
+            question: "Quelle est l'équation d'une droite horizontale ?",
+            option: ["y = constante", "x = constante", "y = x", "y = 2x"],
+            reponse: "y = constante"
+        },
+        {
+            question: "Que vaut 3^3 ?",
+            option: ["27", "9", "18", "81"],
+            reponse: "27"
+        },
+    ],
+    Physique: [
+        {
+            question: "Quelle est la formule de l'énergie cinétique ?",
+            option: ["1/2 m v²", "m g h", "m c²", "F d"],
+            reponse: "1/2 m v²"
+        },
+        {
+            question: "Quelle est la deuxième loi de Newton ?",
+            option: ["F = m a", "E = m c²", "P = m g", "V = I R"],
+            reponse: "F = m a"
+        },
+        {
+            question: "Quelle est l'unité de la force ?",
+            option: ["Newton", "Joule", "Watt", "Pascal"],
+            reponse: "Newton"
+        },
+        {
+            question: "Quelle est la vitesse de la lumière ?",
+            option: ["300 000 km/s", "150 000 km/s", "343 m/s", "100 000 km/s"],
+            reponse: "300 000 km/s"
+        },
+        {
+            question: "Quelle est la formule de l'énergie potentielle gravitationnelle ?",
+            option: ["m g h", "1/2 m v²", "m c²", "h f"],
+            reponse: "m g h"
+        },
+        {
+            question: "Que dit la loi d'Ohm ?",
+            option: ["U = R I", "P = U I", "F = m a", "E = h f"],
+            reponse: "U = R I"
+        },
+        {
+            question: "Quelle est l'unité de la puissance ?",
+            option: ["Watt", "Joule", "Newton", "Volt"],
+            reponse: "Watt"
+        },
+        {
+            question: "Quel est le principe de conservation de l'énergie ?",
+            option: ["L'énergie ne se perd pas, elle se transforme", "L'énergie disparaît", "L'énergie se crée", "L'énergie est infinie"],
+            reponse: "L'énergie ne se perd pas, elle se transforme"
+        },
+        {
+            question: "Quelle est la formule de la pression ?",
+            option: ["P = F / S", "P = F S", "P = m g", "P = U / I"],
+            reponse: "P = F / S"
+        },
+        {
+            question: "Quelle particule a une charge négative ?",
+            option: ["Électron", "Proton", "Neutron", "Photon"],
+            reponse: "Électron"
+        },
+        {
+            question: "Qu'est-ce qu'un photon ?",
+            option: ["Particule de lumière", "Particule de son", "Atome", "Molécule"],
+            reponse: "Particule de lumière"
+        },
+        {
+            question: "Quelle est la loi de la gravitation universelle ?",
+            option: ["F = G m1 m2 / r²", "F = m a", "E = m c²", "P = m g"],
+            reponse: "F = G m1 m2 / r²"
+        },
+        {
+            question: "Quelle est l'unité de l'énergie ?",
+            option: ["Joule", "Watt", "Newton", "Volt"],
+            reponse: "Joule"
+        },
+        {
+            question: "Que mesure un ampèremètre ?",
+            option: ["Courant électrique", "Tension", "Résistance", "Puissance"],
+            reponse: "Courant électrique"
+        },
+        {
+            question: "Quelle est la formule de la fréquence ?",
+            option: ["f = 1 / T", "f = T", "f = v / T", "f = λ T"],
+            reponse: "f = 1 / T"
+        },
+        {
+            question: "Qu'est-ce que l'effet Doppler ?",
+            option: ["Changement de fréquence avec mouvement", "Changement de masse", "Changement de charge", "Changement de température"],
+            reponse: "Changement de fréquence avec mouvement"
+        },
+        {
+            question: "Quelle est la température du zéro absolu ?",
+            option: ["-273.15°C", "0°C", "-100°C", "-500°C"],
+            reponse: "-273.15°C"
+        },
+        {
+            question: "Quelle est la formule E=mc² de qui ?",
+            option: ["Einstein", "Newton", "Tesla", "Bohr"],
+            reponse: "Einstein"
+        },
+        {
+            question: "Quel est le type d'onde du son ?",
+            option: ["Longitudinale", "Transversale", "Électromagnétique", "Stationnaire"],
+            reponse: "Longitudinale"
+        },
+        {
+            question: "Que vaut g sur Terre ?",
+            option: ["9.81 m/s²", "10 m/s²", "3.14 m/s²", "1 m/s²"],
+            reponse: "9.81 m/s²"
+        },
+        {
+            question: "Quelle est l'unité de la charge électrique ?",
+            option: ["Coulomb", "Ampère", "Volt", "Ohm"],
+            reponse: "Coulomb"
+        },
+        {
+            question: "Qu'est-ce que la réfraction ?",
+            option: ["Déviation de la lumière", "Réflexion de la lumière", "Absorption", "Diffusion"],
+            reponse: "Déviation de la lumière"
+        },
+        {
+            question: "Quelle est la loi de conservation de la quantité de mouvement ?",
+            option: ["p = m v", "p = m a", "p = F t", "p = E / c"],
+            reponse: "p = m v"
+        },
+        {
+            question: "Quel est le premier principe de la thermodynamique ?",
+            option: ["Conservation de l'énergie", "Augmentation de l'entropie", "Zéro absolu inaccessible", "Équilibre thermique"],
+            reponse: "Conservation de l'énergie"
+        },
+        {
+            question: "Quelle est la formule de la puissance électrique ?",
+            option: ["P = U I", "P = R I", "P = U / I", "P = I²"],
+            reponse: "P = U I"
+        },
+        {
+            question: "Qu'est-ce qu'un conducteur ?",
+            option: ["Laisse passer le courant", "Bloque le courant", "Stocke le courant", "Crée le courant"],
+            reponse: "Laisse passer le courant"
+        },
+        {
+            question: "Quelle est la vitesse du son dans l'air ?",
+            option: ["343 m/s", "300 000 km/s", "1500 m/s", "100 m/s"],
+            reponse: "343 m/s"
+        },
+        {
+            question: "Quelle est l'unité de la tension ?",
+            option: ["Volt", "Ampère", "Ohm", "Watt"],
+            reponse: "Volt"
+        },
+        {
+            question: "Qu'est-ce que l'inertie ?",
+            option: ["Résistance au changement de mouvement", "Force qui pousse", "Énergie stockée", "Vitesse constante"],
+            reponse: "Résistance au changement de mouvement"
+        },
+        {
+            question: "Quelle est la formule de l'accélération ?",
+            option: ["a = Δv / Δt", "a = v t", "a = F / m²", "a = m / F"],
+            reponse: "a = Δv / Δt"
+        },
+        {
+            question: "Que dit le principe d'Archimède ?",
+            option: ["Poussée = poids du fluide déplacé", "F = m a", "E = m c²", "P = F / S"],
+            reponse: "Poussée = poids du fluide déplacé"
+        },
+        {
+            question: "Quelle est la nature de la lumière ?",
+            option: ["Onde et particule", "Uniquement onde", "Uniquement particule", "Matière"],
+            reponse: "Onde et particule"
+        },
+        {
+            question: "Qu'est-ce qu'un trou noir ?",
+            option: ["Région où gravité empêche lumière de s'échapper", "Étoile brillante", "Planète sombre", "Vide spatial"],
+            reponse: "Région où gravité empêche lumière de s'échapper"
+        },
+        {
+            question: "Quelle est la formule de la longueur d'onde ?",
+            option: ["λ = v / f", "λ = v f", "λ = f / v", "λ = c²"],
+            reponse: "λ = v / f"
+        },
+        {
+            question: "Quelle est l'unité de la résistance ?",
+            option: ["Ohm", "Volt", "Ampère", "Watt"],
+            reponse: "Ohm"
+        },
+        {
+            question: "Qu'est-ce que l'entropie ?",
+            option: ["Mesure du désordre", "Mesure de l'énergie", "Mesure de la force", "Mesure du temps"],
+            reponse: "Mesure du désordre"
+        },
+        {
+            question: "Quelle est la 3e loi de Newton ?",
+            option: ["Action = -Réaction", "F = m a", "Inertie", "Gravitation"],
+            reponse: "Action = -Réaction"
+        },
+        {
+            question: "Que vaut la constante de Planck h ?",
+            option: ["6.63×10⁻³⁴ J·s", "9.81", "3.14", "1.6×10⁻¹⁹"],
+            reponse: "6.63×10⁻³⁴ J·s"
+        },
+        {
+            question: "Quel est le phénomène de la supraconductivité ?",
+            option: ["Résistance nulle à basse température", "Résistance infinie", "Conductivité maximale", "Isolation totale"],
+            reponse: "Résistance nulle à basse température"
+        },
+        {
+            question: "Quelle est la formule de l'effet photoélectrique ?",
+            option: ["E = h f - W", "E = m c²", "E = 1/2 m v²", "E = U I t"],
+            reponse: "E = h f - W"
+        },
+    ],
+    Chimie: [
+        {
+            question: "Quel est le numéro atomique de l'or ?",
+            option: ["79", "47", "29", "82"],
+            reponse: "79"
+        },
+        {
+            question: "Quelle est la formule de l'eau ?",
+            option: ["H2O", "CO2", "NaCl", "O2"],
+            reponse: "H2O"
+        },
+        {
+            question: "Quel est le pH d'un acide fort ?",
+            option: ["<7", ">7", "=7", "=14"],
+            reponse: "<7"
+        },
+        {
+            question: "Quel gaz est le plus abondant dans l'air ?",
+            option: ["Azote", "Oxygène", "CO2", "Hydrogène"],
+            reponse: "Azote"
+        },
+        {
+            question: "Quel est le symbole du sodium ?",
+            option: ["Na", "So", "S", "N"],
+            reponse: "Na"
+        },
+        {
+            question: "Qu'est-ce qu'une mole ?",
+            option: ["6.022×10²³ entités", "1000 grammes", "1 litre", "1 atome"],
+            reponse: "6.022×10²³ entités"
+        },
+        {
+            question: "Quel est le symbole du fer ?",
+            option: ["Fe", "F", "Fr", "Ir"],
+            reponse: "Fe"
+        },
+        {
+            question: "Quelle est la formule du sel de table ?",
+            option: ["NaCl", "KCl", "CaCl2", "MgCl2"],
+            reponse: "NaCl"
+        },
+        {
+            question: "Quel est le pH de l'eau pure ?",
+            option: ["7", "0", "14", "1"],
+            reponse: "7"
+        },
+        {
+            question: "Quel élément a pour symbole Hg ?",
+            option: ["Mercure", "Hydrogène", "Hélium", "Magnésium"],
+            reponse: "Mercure"
+        },
+        {
+            question: "Qu'est-ce que la combustion ?",
+            option: ["Réaction avec O2 produisant chaleur", "Réaction avec eau", "Dissolution", "Fusion"],
+            reponse: "Réaction avec O2 produisant chaleur"
+        },
+        {
+            question: "Quel est le nombre d'Avogadro ?",
+            option: ["6.022×10²³", "3.14", "9.81", "1.6×10⁻¹⁹"],
+            reponse: "6.022×10²³"
+        },
+        {
+            question: "Quelle est la formule du dioxyde de carbone ?",
+            option: ["CO2", "CO", "O2", "C2O"],
+            reponse: "CO2"
+        },
+        {
+            question: "Quel est le métal le plus léger ?",
+            option: ["Lithium", "Fer", "Or", "Plomb"],
+            reponse: "Lithium"
+        },
+        {
+            question: "Qu'est-ce qu'un acide selon Brønsted ?",
+            option: ["Donneur de proton", "Accepteur de proton", "Donneur d'électron", "Base"],
+            reponse: "Donneur de proton"
+        },
+        {
+            question: "Quel est le symbole du potassium ?",
+            option: ["K", "P", "Po", "Pt"],
+            reponse: "K"
+        },
+        {
+            question: "Quelle est la formule de l'acide sulfurique ?",
+            option: ["H2SO4", "HCl", "HNO3", "H2O"],
+            reponse: "H2SO4"
+        },
+        {
+            question: "Qu'est-ce que l'électrolyse ?",
+            option: ["Décomposition par courant électrique", "Fusion par chaleur", "Dissolution dans l'eau", "Combustion"],
+            reponse: "Décomposition par courant électrique"
+        },
+        {
+            question: "Quel est le gaz noble le plus léger ?",
+            option: ["Hélium", "Néon", "Argon", "Xénon"],
+            reponse: "Hélium"
+        },
+        {
+            question: "Quelle est la valence du carbone ?",
+            option: ["4", "2", "1", "6"],
+            reponse: "4"
+        },
+        {
+            question: "Qu'est-ce qu'un isotope ?",
+            option: ["Même Z, A différent", "Même A, Z différent", "Atomes différents", "Molécules identiques"],
+            reponse: "Même Z, A différent"
+        },
+        {
+            question: "Quel est le pH d'une base forte ?",
+            option: [">7", "<7", "=7", "=0"],
+            reponse: ">7"
+        },
+        {
+            question: "Quelle est la formule de l'ammoniac ?",
+            option: ["NH3", "NO2", "N2O", "NH4"],
+            reponse: "NH3"
+        },
+        {
+            question: "Quel élément est liquide à température ambiante avec le mercure ?",
+            option: ["Brome", "Fer", "Or", "Sodium"],
+            reponse: "Brome"
+        },
+        {
+            question: "Qu'est-ce que la molarité ?",
+            option: ["Moles par litre", "Grammes par litre", "Litres par mole", "Moles par gramme"],
+            reponse: "Moles par litre"
+        },
+        {
+            question: "Quel est le symbole du cuivre ?",
+            option: ["Cu", "Co", "C", "Cr"],
+            reponse: "Cu"
+        },
+        {
+            question: "Quelle réaction produit du savon ?",
+            option: ["Saponification", "Combustion", "Neutralisation", "Oxydation"],
+            reponse: "Saponification"
+        },
+        {
+            question: "Quel est le plus électronégatif ?",
+            option: ["Fluor", "Oxygène", "Azote", "Chlore"],
+            reponse: "Fluor"
+        },
+        {
+            question: "Quelle est la formule du méthane ?",
+            option: ["CH4", "C2H6", "CO2", "C2H4"],
+            reponse: "CH4"
+        },
+        {
+            question: "Qu'est-ce qu'un catalyseur ?",
+            option: ["Accélère réaction sans être consommé", "Ralentit réaction", "Est consommé", "Produit de la chaleur"],
+            reponse: "Accélère réaction sans être consommé"
+        },
+        {
+            question: "Quel est le numéro atomique du carbone ?",
+            option: ["6", "12", "14", "8"],
+            reponse: "6"
+        },
+        {
+            question: "Quelle est la formule de la soude caustique ?",
+            option: ["NaOH", "KOH", "Ca(OH)2", "NH4OH"],
+            reponse: "NaOH"
+        },
+        {
+            question: "Quel type de liaison dans NaCl ?",
+            option: ["Ionique", "Covalente", "Métallique", "Hydrogène"],
+            reponse: "Ionique"
+        },
+        {
+            question: "Quel est le gaz qui fait pétiller l'eau gazeuse ?",
+            option: ["CO2", "O2", "N2", "H2"],
+            reponse: "CO2"
+        },
+        {
+            question: "Qu'est-ce que le tableau périodique classe ?",
+            option: ["Éléments par numéro atomique", "Molécules par taille", "Acides par force", "Métaux par couleur"],
+            reponse: "Éléments par numéro atomique"
+        },
+        {
+            question: "Quelle est la formule de l'acide chlorhydrique ?",
+            option: ["HCl", "H2SO4", "HNO3", "H2CO3"],
+            reponse: "HCl"
+        },
+        {
+            question: "Quel métal est utilisé dans les batteries lithium-ion ?",
+            option: ["Lithium", "Fer", "Or", "Plomb"],
+            reponse: "Lithium"
+        },
+        {
+            question: "Qu'est-ce que l'oxydation ?",
+            option: ["Perte d'électrons", "Gain d'électrons", "Perte de protons", "Gain de neutrons"],
+            reponse: "Perte d'électrons"
+        },
+        {
+            question: "Quel est le symbole de l'argent ?",
+            option: ["Ag", "Au", "Al", "Ar"],
+            reponse: "Ag"
+        },
+        {
+            question: "Quelle est la formule du glucose ?",
+            option: ["C6H12O6", "C12H22O11", "CH4", "C2H5OH"],
+            reponse: "C6H12O6"
+        },
+    ],
 };
 
 const quizQuestion = document.getElementById("quizQuestion");
@@ -1233,7 +1839,14 @@ let toutLesQuestion = [];
 let selectedCategory = null;
 let questionAleatoire = [];
 
-
+// categorie.textContent=""
+Object.keys(questions).forEach((c)=>{
+    const category = document.createElement("option")
+    category.textContent=c
+    category.value=c
+    categorie.appendChild(category)
+    console.log(c)
+})
 
 function changeQuestion() {
     clearInterval(intervalTime);
@@ -1288,14 +1901,14 @@ function changeQuestion() {
         } else if (s <= 17) {
             mention.textContent = "Très bien";
             mention.style.color = "#22c55e";
-            document.getElementById("fireworksCanvas").style.display='flex';
-            fireSon.currentTime=5;
+            document.getElementById("fireworksCanvas").style.display = 'flex';
+            fireSon.currentTime = 5;
             fireSon.play()
         } else {
             mention.textContent = "Excellent";
             mention.style.color = "#16a34a";
-            document.getElementById("fireworksCanvas").style.display='flex';
-            fireSon.currentTime=5;
+            document.getElementById("fireworksCanvas").style.display = 'flex';
+            fireSon.currentTime = 5;
             fireSon.play()
         }
     }
